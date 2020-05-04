@@ -354,5 +354,39 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal write-us-base">
+    <h2 class="title">Форма обратной связи</h2>
+    <div class="description">Напишите нам пару строк и мы свяжемся с вами</div>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-base write-us-name-base">
+        <label for="your-name">Ваше имя:</label>
+        <input id="your-name" class="user-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="form-base write-us-email-base">
+        <label for="your-email">Ваш e-mail:</label>
+        <input id="your-email" class="user-email" type="email" name="email" placeholder="Для отправки ответа" required>
+      </div>
+       <div class="form-base write-us-text-base">
+        <label for="write-us-text">Текст письма:</label>
+        <textarea id="write-us-text" name="message" maxlength="500" placeholder="В свободной форме" required></textarea>
+      </div>
+      <button class="yellow-cta add-to-cart" type="submit"><span>Отправить</span></button>
+    </form>
+    <button type="button" class="modal-close" aria-label="close">
+      <span aria-hidden="true">Закрыть</span>
+    </button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="title">Как до нас добраться</h2>
+    <iframe class="map-frame"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1586612704161!5m2!1sru!2sru"
+    width="100%" height="460" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+    tabindex="0"></iframe>
+    <button type="button" class="modal-close" aria-label="close">
+      <span aria-hidden="true">Закрыть</span>
+  </section>
+ 
 </body>
 </html>

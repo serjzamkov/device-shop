@@ -484,6 +484,7 @@ margin-left: auto;
     color: black;
     padding: 8px 35px;
     text-align: center;
+    border: 0;
     transition: background-color 0.4s ease;
 }
 
@@ -588,7 +589,7 @@ margin-left: auto;
     width: 140px;
     height: 12px;
     text-align: center;
-    z-index: 1000;
+    z-index: 50;
     font-size: 0;
 }
 .slider-controls label {
@@ -1632,4 +1633,133 @@ ul.pagination-num li a:hover {
 
 ul.pagination-num li a:focus {
     color: black;
+}
+
+/* Modal write us */
+
+.modal {
+    position: fixed;
+    margin: auto;
+    width: 760px;
+    height: 610px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    text-align: left;
+    z-index: 100;
+    box-shadow: 0px 0px 30px 0px rgba(5,0,0, 0.25);
+}
+
+.write-us-base {
+    /* display: none; */
+    padding: 0 100px;
+}
+
+.write-us-base h2 {
+    padding-top: 65px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.write-us-base .description {
+    padding:0;
+    margin-bottom: 35px;
+}
+
+.write-us-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-base {
+    width: 360px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-base label {
+    margin-bottom: 10px;
+    font: 18px/18px "Gilroy ExtraBold", Arial, sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+
+.write-us-form input {
+    padding-bottom: 15px;
+    width: 360px;
+}
+
+.write-us-form input[type="text"],
+.write-us-form input[type="email"], 
+.write-us-form textarea {
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font: 14px/18px "Open Sans Regular", Arial, sans-serif;
+    background-color: #f2f2f2;
+    border: 0;
+    outline: 0;
+}
+
+/* .write-us-form input:-webkit-autofill,
+.write-us-form input:-webkit-autofill:hover, 
+.write-us-form input:-webkit-autofill:focus {
+    background-color: #f2f2f2;
+} */
+
+.write-us-name-base {
+    margin-right: 40px;
+}
+
+.write-us-form textarea {
+    /* width: 740px; */
+    height: 140px;
+}
+
+.write-us-text-base {
+    width: 100%;
+}
+
+.modal-map {
+    display: none;
+    flex-direction: column;
+    width: 960px;
+}
+
+.modal-map h2 {
+    padding-top: 65px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: block;
+    font-size: 0;
+    background: transparent url("/img/svg-device/modal-close.svg") no-repeat;
+    width: 55px;
+    height: 55px;
+    border: 0;
+    outline: 0;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.3;
 }
