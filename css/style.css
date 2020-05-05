@@ -861,6 +861,7 @@ margin-left: auto;
 }
 
 .map-bottom {
+    display: inline-block;
     padding-bottom: 65px;
 }
 .contacts {
@@ -1635,10 +1636,11 @@ ul.pagination-num li a:focus {
     color: black;
 }
 
-/* Modal write us */
+/* Modal --- Write us, Map */
 
 .modal {
     position: fixed;
+    display: none;
     margin: auto;
     width: 760px;
     height: 610px;
@@ -1762,4 +1764,8 @@ ul.pagination-num li a:focus {
 
 .modal-close:active {
     opacity: 0.3;
+}
+
+.modal-show {
+    display: block;
 }
